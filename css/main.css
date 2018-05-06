@@ -1,0 +1,4 @@
+/* 100% max width catch-all, from Lesson 12.10 */
+img, embed, object, video {
+  max-width: 100%;
+}
