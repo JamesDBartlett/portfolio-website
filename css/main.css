@@ -29,7 +29,7 @@ header {
 }
 
 main {
-padding: 10px;
+  margin: 10px;
 }
 
 section {
@@ -37,7 +37,7 @@ section {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0;
+  margin: 10px;
 }
 
 footer {
