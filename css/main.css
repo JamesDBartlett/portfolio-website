@@ -1,9 +1,11 @@
 /*==============================================
                     MAIN.CSS
+       Copyright 2018 James D. Bartlett III
 ===============================================*/
 
+
 /*----------------------------------------------
-                    ELEMENTS
+                      TAGS
 -----------------------------------------------*/
 /* 100% max width catch-all, from Lesson 12.10 */
 img, embed, object, video {
@@ -17,7 +19,9 @@ nav a, button {
 }
 
 body {
-
+  font-family: monospace;
+  font-size: 14px;
+  color: #000;
 }
 
 header {
@@ -28,8 +32,12 @@ main {
 
 }
 
-h1, h2, h3, h4, h5 {
+section {
 
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 footer {
@@ -49,10 +57,18 @@ footer {
 }
 
 .nav {
-
+  padding: 1.25em;
 }
 
 .nav-inner {
+
+}
+
+.section-1 {
+
+}
+
+.section-2 {
 
 }
 

@@ -7,4 +7,5 @@ echo $i...
 let i+=1
 done
 say stop screwing around!
+let i=0
 done
