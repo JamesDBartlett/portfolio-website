@@ -20,7 +20,8 @@ nav a, button {
 }
 
 body {
-  margin:0px;
+  padding-top: 4rem;
+  margin: 5px;
   font-family: monospace;
   font-size: 14px;
   color: #FFF;
@@ -33,7 +34,7 @@ header {
 }
 
 main {
-  margin: 10px;
+  margin: 5px;
 }
 
 section {
@@ -41,8 +42,8 @@ section {
 }
 
 h1, h2, h3, h4, h5 {
-  padding: 10px;
-  width: 95%;
+  /* padding: 10px; */
+  width: 100%;
 }
 
 footer {
@@ -65,7 +66,7 @@ footer {
 
 .header-inner {
   width: 100%;
-  text-align: right;
+
 }
 
 .nav {
@@ -114,20 +115,13 @@ footer {
                     IDs
 -----------------------------------------------*/
 
-#override-bootstrap h1 {
-  font-size: calc(4vw + 4vh + 2vmin);
-}
-
-#override-bootstrap h2 {
-  font-size: (calc(4vw + 4vh + 2vmin)*0.65);
-}
-
 #banner {
 
 }
 
 #header-text {
   white-space: nowrap;
+  text-align: right;
 }
 
 #menu {

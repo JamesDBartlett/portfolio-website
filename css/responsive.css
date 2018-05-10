@@ -3,15 +3,42 @@
 |       Copyright 2018 James D. Bartlett III    |
 /==============================================*/
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
 }
-@media screen and (min-width: 601px) {
-
+@media screen and (min-width: 481px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
-@media screen and (min-width: 700px) {
-
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 26px;
+  }
 }
-@media screen and (min-width: 825px) {
-
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 31px;
+  }
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 39px;
+  }
 }
