@@ -10,6 +10,10 @@
   h2 {
     font-size: 16px;
   }
+  .box-icon {
+    width: 25%;
+    height: auto;
+  }
 }
 @media screen and (min-width: 481px) {
   h1 {
@@ -17,6 +21,10 @@
   }
   h2 {
     font-size: 20px;
+  }
+  .box-icon {
+    width: 25%;
+    height: auto;
   }
 }
 @media screen and (min-width: 640px) {
@@ -26,6 +34,10 @@
   h2 {
     font-size: 26px;
   }
+  .box-icon {
+    width: 35%;
+    height: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   h1 {
@@ -34,11 +46,19 @@
   h2 {
     font-size: 31px;
   }
+  .box-icon {
+    width: 40%;
+    height: auto;
+  }
 @media screen and (min-width: 960px) {
   h1 {
     font-size: 50px;
   }
   h2 {
     font-size: 39px;
+  }
+  .box-icon {
+    width: 45%;
+    height: auto;
   }
 }

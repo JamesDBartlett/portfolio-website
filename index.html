@@ -5,9 +5,11 @@
 | Copyright 2018 James D. Bartlett III            |
 //////////////////////////////////////////////////
 
- //////////////////////////////////////////////////
-|
- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ //////////////////////////////////////////////////////////
+|  This page relies heavily on the Bootstrap framework,   |
+|  and its responsive design is based on the "Jumbotron"  |
+|  example in Bootstrap 4.1.0.                            |
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 -->
 
 <!DOCTYPE html>
@@ -15,10 +17,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="description" content="James D. Bartlett III, Front-End Web Developer">
+    <meta name="author" content="James D. Bartlett III">
+    <link rel="icon" type="image/png" href="img/png/favicon.png">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>James Bartlett | FE Web Dev</title>
@@ -26,67 +32,103 @@
 
   <body id="override-bootstrap">
     <header id="banner" class="header">
+
       <!-- start navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">J.D.B. III</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbar-menu" aria-controls="navbar-menu"
         aria-expanded="false" aria-label="Navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#github">GitHub</a>
+              <a class="dropdown-item" href="#sideproj">Side Projects</a>
+              </div>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link 1</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="#resume">Résumé</a>
+              <a class="dropdown-item" href="#">Email</a>
+              <a class="dropdown-item" href="#">vCard</a>
+              <a class="dropdown-item" href="#pubkey">Public Key</a>
+              </div>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link 2</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About James</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+              <a class="dropdown-item" href="#bio">Bio</a>
+              <a class="dropdown-item" href="#music">Music</a>
+              </div>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link 3</a>
-            </li>
+          </ul>
         </div>
       </nav>
       <!-- end navbar -->
 
+      <!-- start banner & page title -->
       <image src="img/png/jdb3-banner.png" alt="banner" class="banner-img">
       <div class="header-inner" id="header-text">
-        <h1>James D. Bartlett III</h1>
-        <h2>Front-End Web Developer</h2>
+        <h1 class="name-full">James D. Bartlett III</h1>
+        <h2 class="title-full">Front-End Web Developer</h2>
       </div>
+      <!-- end banner & page title -->
+
     </header>
-    <nav id="menu" class="nav">
-      <div class="nav-inner">
-      </div>
-    </nav>
+    <hr>
     <main>
-      <section class="section-1">
-        <h1>Heading 1</h1>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-            </div>
-            <!-- <div class="col">
-            </div> -->
-          </div>
-          <div class="row">
-            <div class="col">
-            </div>
-            <div class="col">
-            </div>
-            <div class="col">
-            </div>
-          </div>
+
+    <section class="container section-1" id="external-links">
+      <div class="row">
+        <div class="col-md-4" id="github">
+          <h4 class="box-title">GitHub</h4>
+          <img src="img/png/github_(icons8).png" alt="github icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
         </div>
-      </section>
-      <section class="section-2">
+        <div class="col-md-4" id="resume">
+          <h4 class="box-title">Résumé</h4>
+          <img src="img/png/resume_(ionicons).png" alt="resume icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+        <div class="col-md-4" id="pubkey">
+          <h4 class="box-title">Public Key</h4>
+          <img src="img/png/pub-key_(ionicons).png" alt="public key icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" id="sideproj">
+          <h4 class="box-title">Side Projects</h4>
+          <img src="img/png/side-proj_(ionicons).png" alt="side projects icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+        <div class="col-md-4" id="bio">
+          <h4 class="box-title">Bio</h4>
+          <img src="img/png/bio_(ionicons).png" alt="bio icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+        <div class="col-md-4" id="music">
+          <h4 class="box-title">Music</h4>
+          <img src="img/png/music_(ionicons).png" alt="music icon" class="box-icon">
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+        </div>
+      </div>
+    </section>
+      <!--
+      <section class="container section-2">
         <h2>Heading 2</h2>
       </section>
+       -->
     </main>
+    <hr>
     <footer class="footer">
       <div class="footer-inner">
+        <p>&copy; James D. Bartlett III 2018</p>
       </div>
     </footer>
   </body>

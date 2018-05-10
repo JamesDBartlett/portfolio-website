@@ -13,16 +13,11 @@ img, embed, object, video {
   max-width: 100%;
 }
 
-/* touch target catch-all, from Lesson 12.13 */
-nav a, button {
-  min-height: 48px;
-  min-width: 48px;
-}
-
 body {
   padding-top: 4rem;
   margin: 5px;
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
+  font-weight: thin;
   font-size: 14px;
   color: #FFF;
   background-color: #030f13;
@@ -42,12 +37,15 @@ section {
 }
 
 h1, h2, h3, h4, h5 {
-  /* padding: 10px; */
   width: 100%;
 }
 
 footer {
 
+}
+
+p {
+  padding: 5px;
 }
 
 
@@ -67,6 +65,15 @@ footer {
 .header-inner {
   width: 100%;
 
+}
+
+.title-full {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.name-full {
+  font-weight:400;
 }
 
 .nav {
@@ -101,12 +108,22 @@ footer {
 
 }
 
+.box-icon {
+  -webkit-filter: invert(100%);
+}
+
+.box-title {
+  text-decoration: underline;
+}
+
 .footer {
 
 }
 
 .footer-inner {
-
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
 }
 
 
@@ -122,6 +139,11 @@ footer {
 #header-text {
   white-space: nowrap;
   text-align: right;
+  padding: 10px;
+}
+
+#override-bootstrap #name-full {
+
 }
 
 #menu {
