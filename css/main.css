@@ -23,7 +23,9 @@ body {
   margin:0px;
   font-family: monospace;
   font-size: 14px;
-  color: #000;
+  color: #FFF;
+  background-color: #030f13;
+
 }
 
 header {
@@ -53,10 +55,18 @@ footer {
 
 .header {
   width: 100%;
+  font-size: calc(4vw + 4vh + 2vmin);
+}
+
+.banner-img {
+  width:100%;
+
 }
 
 .header-inner {
   width: 100%;
+  text-align: right;
+
 }
 
 .nav {
