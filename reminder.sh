@@ -6,6 +6,6 @@ sleep 1
 echo $i...
 let i+=1
 done
-say stop screwing around!
+say hey! quit screwing around and get back to work!
 let i=0
 done
