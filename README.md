@@ -12,7 +12,8 @@ This website is just a placeholder for now, but my plan is to eventually make it
 * Relies heavily on JavaScript
   * Degrades poorly if JS is disabled (a la NoScript)
   * Still looks OK without JS, but stuff breaks.
-* Has NOT been optimized for a11y.
+* Has NOT been analyzed for or tested against any design standards
+* No touch-specific features
 
 # Planned Site
 * Simplified front page
@@ -41,6 +42,7 @@ This website is just a placeholder for now, but my plan is to eventually make it
           * 3-5 embedded, expandable examples of clever/elegant original code w/ short explanation
           * Each embedded snippet should have an option to see it in context on GitHub
           * Feature HTML, (S)CSS, & (T/)JS, etc.
+          * Carousel of full GitHub repo list
         * Back-End Web
           * 3-5 ...
           * ...
@@ -61,3 +63,12 @@ This website is just a placeholder for now, but my plan is to eventually make it
       * Bio
       * Blog
       * "Side Hustles"
+* Standards Compliance -- Optimized & Fully Compliant With:
+  * A11y Standards
+  * W3C Standards
+  * ...
+* Touch-specific features
+  * Parallax effect on all photos
+  * Carousels should pan smoothly with touch
+  * ...
+  
