@@ -5,19 +5,30 @@ This website is just a placeholder for now, but my plan is to eventually make it
 * [Current Features](#current-features)
 * [Planned Features](#planned-features)
 
-# Current Features
+# Current Site
 * Mish-mash of categories on front page
 * Single page format with links to external resources
 * Somewhat graceful responsive design via Bootstrap CSS
 * Relies heavily on JavaScript
   * Degrades poorly if JS is disabled (a la NoScript)
   * Still looks OK without JS, but stuff breaks.
-* No Flash (huzzah!)
+* Has NOT been optimized for a11y.
 
-# Planned Features
+# Planned Site
 * Simplified front page
 * "Flat" design
 * Embedded Twitter box
+* Make JS optional, but encouraged
+  * Entire website should work without JS by default
+    * Static content
+    * Screenshot & external link to anything that doesn't look nice embedded
+    * Small hovering iframe nag: "JavaScript is disabled" w/ link to enable
+  * Use JS to toggle "js-enabled" mode
+    * Hide "JS is disabled" iframe
+    * Upgrade features
+      * Static -> Dynamic
+      * External -> Inline
+      * Screenshot -> Live
 * 3 Links on main page
   * Each link is a "category"
     * Clicking a link either:
